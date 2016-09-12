@@ -19,8 +19,9 @@
     <section class="slide">
       <h2>CSS 5DX</h2>
     </section>
-    <section class="slide cover">
-      <h2>Оскар в веб разработке</h2>
+    <section class="slide"><img alt="awwwards.jpg" src="img/awwwards.jpg" class="logo-img"/><img alt="css-design-awards.png" src="img/css-design-awards.png" class="logo-img"/><img alt="fwa.png" src="img/fwa.png" class="logo-img"/>
+    </section>
+    <section class="slide"><img alt="oskar-and-dicaprio.jpg" src="img/oskar-and-dicaprio.jpg" class="cover"/>
     </section>
     <section class="slide ie-end-header">
       <h2 class="shout">12. 01. 2016</h2>
@@ -29,7 +30,6 @@
       <h2 class="link-slide_header half">End of old IE support</h2><img alt="old-ie dead" src="img/old-ie dead.svg" class="half"/>
       <p><a href="https://www.microsoft.com/ru-ru/WindowsForBusiness/End-of-IE-support" target="blank" class="link-slide_link">http://goo.gl/7JEoBh</a></p>
     </section>
-    <section class="slide"></section>
     <section class="slide">
       <h2 class="shout">Перекос</h2>
     </section>
@@ -247,20 +247,44 @@
 	transform: translateX( value );
 }</code></pre>
     </section>
+    <section class="slide centr-example">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block transltate-demo_translate-x">translateX(100px)</div>
+      </div>
+    </section>
     <section class="slide centr-code">
       <pre><code>.element {
 	transform: translateY( value );
 }</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block transltate-demo_translate-y">translateY(100px)</div>
+      </div>
     </section>
     <section class="slide centr-code">
       <pre><code>.element {
 	transform: translateZ( length );
 }</code></pre>
     </section>
+    <section class="slide centr-example transltate-demo_3d-wrap">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block transltate-demo_translate-z">translateZ(100px)</div>
+      </div>
+    </section>
     <section class="slide centr-code">
       <pre><code>.element {
 	transform: translate3d(value, value, length);
 }</code></pre>
+    </section>
+    <section class="slide centr-example transltate-demo_3d-wrap">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block transltate-demo_translate3d">translateX(50px)<br>translateY(50px)<br>translateZ(100px)</div>
+      </div>
     </section>
     <section class="slide white"><a href="http://sokruta.com.ua/" target="blank"><img alt="socruta" src="img/socruta.jpg" class="cover"/></a></section>
     <section class="slide black"><a href="http://mahno.com.ua/uk" target="blank"><img alt="mahno" src="img/mahno.jpg" class="cover"/></a></section>
@@ -352,6 +376,24 @@
       <h2 class="shout">Матрицы</h2>
     </section>
     <section class="slide">
+      <h2 class="shout">Предупреди браузер</h2>
+    </section>
+    <section class="slide">
+      <h2>will-change: auto | prop [, prop]?</h2>
+      <p>Свойсто
+        <mark>will-change</mark>позволяет заранее проинформировать браузер об изменениях, которые возможно будут применены к элементу.
+        И применить к нему апаратное ускорение
+      </p>
+    </section>
+    <section class="slide white link-slide">
+      <h2 class="link-slide_header half">W3C <br>will-change:</h2><img alt="will-change-w3c" src="img/will-change-w3c.svg" class="half"/>
+      <p><a href="https://www.w3.org/TR/css-will-change-1" target="blank" class="link-slide_link">http://goo.gl/thD511</a></p>
+    </section>
+    <section class="slide white link-slide">
+      <h2 class="link-slide_header half">Статья от Sara Soueidan</h2><img alt="will-change-sara-soueidan" src="img/will-change-sara-soueidan.svg" class="half"/>
+      <p><a href="http://goo.gl/4cOMMp" target="blank" class="link-slide_link">http://goo.gl/4cOMMp</a></p>
+    </section>
+    <section class="slide">
       <h2 class="shout">Attention JS (event)</h2>
     </section>
     <section class="slide">
@@ -375,24 +417,6 @@ $element.on( "mousemove", function() {
 		lastMove = Date.now();
 	}
 });</code></pre>
-    </section>
-    <section class="slide">
-      <h2 class="shout">Предупреди браузер</h2>
-    </section>
-    <section class="slide">
-      <h2>will-change: auto | prop [, prop]?</h2>
-      <p>Свойсто
-        <mark>will-change</mark>позволяет заранее проинформировать браузер об изменениях, которые возможно будут применены к элементу.
-        И применить к нему апаратное ускорение
-      </p>
-    </section>
-    <section class="slide white link-slide">
-      <h2 class="link-slide_header half">W3C <br>will-change:</h2><img alt="will-change-w3c" src="img/will-change-w3c.svg" class="half"/>
-      <p><a href="https://www.w3.org/TR/css-will-change-1" target="blank" class="link-slide_link">http://goo.gl/thD511</a></p>
-    </section>
-    <section class="slide white link-slide">
-      <h2 class="link-slide_header half">Статья от Sara Soueidan</h2><img alt="will-change-sara-soueidan" src="img/will-change-sara-soueidan.svg" class="half"/>
-      <p><a href="http://goo.gl/4cOMMp" target="blank" class="link-slide_link">http://goo.gl/4cOMMp</a></p>
     </section>
     <div class="progress"></div>
     <p class="badge"><a href="https://github.com/OleksandrPavlyshch">Fork me on GitHub</a></p>

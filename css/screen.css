@@ -81,7 +81,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.25; min-w
 
 .link-slide { padding: 0; text-align: center; font-size: 60px; }
 
-.link-slide_header { font-size: 73px !important; line-height: 1.3 !important; font-weight: 700 !important; }
+.link-slide_header { font-size: 73px !important; line-height: 1.3 !important; font-weight: 700 !important; padding-left: 30px; }
 
 .link-slide_link { font-size: 70px !important; background: none !important; }
 
@@ -114,6 +114,10 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 .ie-end-header .shout:after { display: none; }
 
 .ie-end-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+
+.logo-img { max-height: 30%; display: block; margin: 0 auto; }
+
+.logo-img + .logo-img { margin-top: 3%; }
 
 .perspective_origin-header { background: url("../img/ac1_viewpoint.jpg") 50% 50% no-repeat; background-size: cover; }
 
@@ -316,6 +320,39 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 @keyframes spin { from { -webkit-transform: rotateY(0); }
   to { -webkit-transform: rotateY(360deg); } }
+
+.transltate-demo_translate-x { transform: translateX(100px); }
+
+.active .transltate-demo_translate-x { animation: translate-x 4s linear infinite alternate; }
+
+.transltate-demo_translate-y { transform: translateY(100px); }
+
+.active .transltate-demo_translate-y { animation: translate-y 4s linear infinite alternate; }
+
+.transltate-demo_translate-z { transform: translateZ(100px); }
+
+.active .transltate-demo_translate-z { animation: translate-z 4s linear infinite alternate; }
+
+.transltate-demo_3d-wrap { perspective: 1500px; }
+
+.transltate-demo_3d-wrap .demo-mesh { transform-style: preserve-3d; transform: rotateY(60deg) rotateX(30deg); }
+
+.transltate-demo_translate3d { line-height: 80px !important; transform: translateX(100px) translateY(100px) translateZ(100px); }
+
+.active .transltate-demo_translate3d { animation: translate-3d 4s linear infinite alternate; }
+
+@keyframes translate-x { from { transform: translateX(0); }
+  to { transform: translateX(100px); } }
+
+@keyframes translate-y { from { transform: translateY(0); }
+  to { transform: translateY(100px); } }
+
+@keyframes translate-z { from { transform: translateZ(0); }
+  to { transform: translateZ(100px); } }
+
+@keyframes translate-3d { 0% { transform: translateX(0) translateY(0) translateZ(0); }
+  50% { transform: translateX(-50px) translateY(-50px) translateZ(100px); }
+  100% { transform: translateX(50px) translateY(50px) translateZ(100px); } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
