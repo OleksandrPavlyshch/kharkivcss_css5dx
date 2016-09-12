@@ -234,8 +234,8 @@
       <h2 class="shout">Перемещение</h2>
     </section>
     <section class="slide white"><a href="http://sokruta.com.ua/" target="blank"><img alt="socruta" src="img/socruta.jpg" class="cover"/></a></section>
+    <section class="slide black"><a href="http://retailsolutions.ru/" target="blank"><img alt="retailsolutions" src="img/retailsolutions.jpg" class="cover"/></a></section>
     <section class="slide black"><a href="http://www.world-of-swiss.com/ru" target="blank"><img alt="word-of-swiss" src="img/word-of-swiss.jpg" class="cover"/></a></section>
-    <section class="slide black"><a href="http://mahno.com.ua/uk" target="blank"><img alt="mahno" src="img/mahno.jpg" class="cover"/></a></section>
     <section class="slide">
       <h2>transform: translate( value )</h2>
       <p>Задает сдвиг элемента относительно осей X, Y, Z и точки задаваемой свойством 
@@ -375,6 +375,31 @@
     </section>
     <section class="slide">
       <h2 class="shout">Матрицы</h2>
+    </section>
+    <section class="slide">
+      <h2>transform: matrix(a, b, c, d, e, f)</h2>
+      <p>Описывает в виде матрицы 2D преобразования елемента.</p>
+      <pre><code>.element {
+	transform: matrix( a, b, 0,
+					   c, d, 0,
+					   tx, ty, 0 );
+}</code></pre>
+    </section>
+    <section class="slide">
+      <h2>transform: matrix3d()</h2>
+      <p>Описывает в виде матрицы 3D преобразования елемента.</p>
+      <pre><code>.element {
+	transform: matrix3d( sx, 0, 0, 0,
+ 						 0, sy, 0, 0,
+ 						 0, 0, sz, 0,
+ 						 0, 0, 0, 1 );
+}</code></pre>
+    </section>
+    <section class="slide link-slide">
+      <h2 class="link-slide_header half">Understanding transforms matrix</h2><img alt="understanding-the-css-transforms-matrix" src="img/understanding-the-css-transforms-matrix.svg" class="half"/><a href="https://dev.opera.com/articles/ru/understanding-the-css-transforms-matrix/" class="link-slide_link">http://goo.gl/ZaQ3wR</a>
+    </section>
+    <section class="slide link-slide">
+      <h2 class="link-slide_header half">Interpolation of 3D matrix</h2><img alt="interpolation-of-decomposed-3d-matrix" src="img/interpolation-of-decomposed-3d-matrix.svg" class="half"/><a href="https://www.w3.org/TR/css-transforms-1/#interpolation-of-decomposed-3d-matrix-values" class="link-slide_link">http://goo.gl/Noyqtj	</a>
     </section>
     <section class="slide">
       <h2 class="shout">Предупреди браузер</h2>
