@@ -69,6 +69,10 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.25; min-w
 
 .demo-mesh_transform-block { border: 2px solid red; z-index: 2; }
 
+.demo-3d { border: 2px blue solid; position: relative; margin: auto; height: 85%; width: 65%; }
+
+.demo-3d_inner { position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; height: 70%; width: 80%; border: 2px red solid; font-size: 2.5em; }
+
 .centr-example { text-align: center; }
 
 .centr-example .demo-mesh { width: 800px; height: 500px; background-size: 83px 75px; }
@@ -168,6 +172,32 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 @keyframes transform-perspective-2 { from { transform: perspective(400px) rotateY(30deg); }
   to { transform: perspective(400px) rotateY(60deg); } }
 
+.active .rotate-demo_rotate-z { animation: rotate-z 6s linear infinite; }
+
+.rotate-demo_rotate-x { transform: rotateX(60deg); }
+
+.active .rotate-demo_rotate-x { animation: rotate-x 2s linear infinite alternate; }
+
+.rotate-demo_rotate-y { transform: rotateY(60deg); }
+
+.active .rotate-demo_rotate-y { animation: rotate-y 2s linear infinite alternate; }
+
+.rotate-demo_rotate-3d { transform: rotate3d(1, 2, 3, 30deg); }
+
+.active .rotate-demo_rotate-3d { animation: rotate-3d 4s linear infinite; }
+
+@keyframes rotate-z { from { transform: rotateZ(0); }
+  to { transform: rotateZ(360deg); } }
+
+@keyframes rotate-x { from { transform: rotateX(0); }
+  to { transform: rotateX(60deg); } }
+
+@keyframes rotate-y { from { transform: rotateY(0); }
+  to { transform: rotateY(60deg); } }
+
+@keyframes rotate-3d { from { transform: rotate3d(1, 1, 1, 0); }
+  to { transform: rotate3d(1, 1, 1, 360deg); } }
+
 .scale-demo_scale-x { transform: scaleX(1.5); }
 
 .active .scale-demo_scale-x { animation: scale-x 2s linear infinite alternate; }
@@ -176,9 +206,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .active .scale-demo_scale-y { animation: scale-y 2s linear infinite alternate; }
 
-.scale-demo_scale-3d, .scale-demo_scale-z { border: 2px blue solid; position: relative; margin: auto; height: 85%; width: 65%; }
-
-.scale-demo_scale-3d-block, .scale-demo_scale-z-block { position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; height: 70%; width: 80%; border: 2px red solid; transform: scale3d(1, 1, 2) rotateX(50deg); font-size: 2.5em; }
+.scale-demo_scale-3d-block, .scale-demo_scale-z-block { transform: scale3d(1, 1, 2) rotateX(50deg); }
 
 .active .scale-demo_scale-z-block { animation: scale-z 2s linear infinite alternate; }
 

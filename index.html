@@ -292,31 +292,50 @@
     <section class="slide">
       <h2 class="shout">Повороты</h2>
     </section>
+    <section class="slide white"><a href="https://www.amazon.com/gp/product/147782202X/ref=s9_acsd_al_bw_c_x_3?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=merchandised-search-7&amp;pf_rd_r=TMC6M4SA9EXCZKV0W90A&amp;pf_rd_t=101&amp;pf_rd_p=2548614302&amp;pf_rd_i=283155" target="blank"><img alt="socruta" src="img/amazon-book.jpg" class="cover"/></a></section>
     <section class="slide">
       <h2>transform: rotate( angle );</h2>
       <p>Задает поворот элемента относительно осей X, Y, Z и точки задаваемой свойством 
         <mark>transform-origin</mark>.
       </p>
+      <pre><code>.element {
+	transform: rotateZ( 30deg );
+}</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner rotate-demo_rotate-z">rotateZ( 360deg )<br>rotate( 360deg )</div>
+      </div>
     </section>
     <section class="slide centr-code">
       <pre><code>.element {
-	transform: rotateX( 30deg );
+	transform: rotateX( 60deg );
 }</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner rotate-demo_rotate-x">rotateX( 60deg )</div>
+      </div>
     </section>
     <section class="slide centr-code">
       <pre><code>.element {
 	transform: rotateY( 30deg );
 }</code></pre>
     </section>
-    <section class="slide centr-code">
-      <pre><code>.element {
-	transform: rotateZ( 30deg );
-}</code></pre>
+    <section class="slide centr-example">
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner rotate-demo_rotate-y">rotateY( 30deg )</div>
+      </div>
     </section>
     <section class="slide centr-code">
       <pre><code>.element {
 	transform: rotate3d( 1, 1, 1, 30deg );
 }</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner rotate-demo_rotate-3d">rotate3d( 1, 1, 1, 360deg )</div>
+      </div>
     </section>
     <section class="slide">
       <h2 class="shout">Увеличение</h2>
@@ -358,9 +377,8 @@
 }</code></pre>
     </section>
     <section class="slide centr-example">
-      <div class="demo-example"></div>
-      <div class="scale-demo_scale-z preserve-3d">
-        <div class="scale-demo_scale-z-block">scaleZ(2) rotateX(50deg)</div>
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner scale-demo_scale-z-block">scaleZ(2) rotateX(50deg)</div>
       </div>
     </section>
     <section class="slide centr-code">
@@ -369,8 +387,8 @@
 }</code></pre>
     </section>
     <section class="slide centr-example">
-      <div class="scale-demo_scale-3d preserve-3d">
-        <div class="scale-demo_scale-3d-block">scale3d(1, 1, 2) rotateX(50deg)</div>
+      <div class="demo-3d preserve-3d">
+        <div class="demo-3d_inner scale-demo_scale-3d-block">scale3d(1, 1, 2) rotateX(50deg)</div>
       </div>
     </section>
     <section class="slide">
