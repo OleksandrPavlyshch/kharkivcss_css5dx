@@ -49,7 +49,7 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.25; min-w
 
 .attention-js-header .shout:after { display: none; }
 
-.attention-js-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+.attention-js-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 .cover-frame { left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; position: absolute; }
 
@@ -129,7 +129,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .ie-end-header .shout:after { display: none; }
 
-.ie-end-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+.ie-end-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 .logo-img { max-height: 30%; display: block; margin: 0 auto; }
 
@@ -141,7 +141,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .perspective_origin-header .shout:after { display: none; }
 
-.perspective_origin-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+.perspective_origin-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 .perspective-header { background: url("../img/Deadpool_AtomicFiction_VFX_18A.jpg") 50% 50% no-repeat; background-size: cover; }
 
@@ -149,7 +149,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .perspective-header .shout:after { display: none; }
 
-.perspective-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+.perspective-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 .demo-perspective { position: absolute; padding: 10px; left: 13%; top: 10%; bottom: 16%; right: 13%; border: 1px solid #000; }
 
@@ -300,6 +300,14 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .skew-arrow_left, .skew-arrow_right { margin-bottom: 150px; }
 
+.transform-origin-header { background: url("../img/transformers-4.jpg") 50% 50% no-repeat; background-size: cover; }
+
+.transform-origin-header .shout { padding: 0 50px; text-align: center; }
+
+.transform-origin-header .shout:after { display: none; }
+
+.transform-origin-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
+
 .transform-origin_demo { width: 250px; height: 200px; position: relative; }
 
 .transform-origin_demo-bell { position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; transform-origin: 50% 4px 0; }
@@ -342,7 +350,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .transform-style-header .shout:after { display: none; }
 
-.transform-style-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+.transform-style-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 .transform-style-demo { position: relative; height: 200px; width: 200px; border: 2px solid blue; perspective: 500; float: right; margin-right: 35px; }
 
