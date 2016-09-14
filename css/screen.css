@@ -43,6 +43,14 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.25; min-w
 
 .centr-code code { font-size: 32px !important; }
 
+.attention-js-header { background: url("../img/mask-gun.jpg") 50% 50% no-repeat; background-size: cover; }
+
+.attention-js-header .shout { padding: 0 50px; text-align: center; }
+
+.attention-js-header .shout:after { display: none; }
+
+.attention-js-header h2 { font-size: 140px !important; text-shadow: 3px 4px 10px #000; }
+
 .cover-frame { left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; position: absolute; }
 
 .demo-example { float: right; }
@@ -292,7 +300,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .skew-arrow_left, .skew-arrow_right { margin-bottom: 150px; }
 
-.transform-origin_demo { width: 300px; height: 200px; position: relative; }
+.transform-origin_demo { width: 250px; height: 200px; position: relative; }
 
 .transform-origin_demo-bell { position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto; transform-origin: 50% 4px 0; }
 
