@@ -224,6 +224,12 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .active .scale-demo_scale-3d-block { animation: scale-3d 2s linear infinite alternate; }
 
+.scale-demo_scale-invert { transform: scaleX(-1); }
+
+.scale-demo_scale-invert img { max-height: 100%; }
+
+.active .scale-demo_scale-invert { animation: scale-invert 4s linear infinite alternate; }
+
 @keyframes scale-x { from { transform: scaleX(1); }
   to { transform: scaleX(1.5); } }
 
@@ -235,6 +241,9 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 @keyframes scale-3d { from { transform: scale3d(1, 1, 1) rotateX(50deg); }
   to { transform: scale3d(1, 1, 2) rotateX(50deg); } }
+
+@keyframes scale-invert { from { transform: scaleX(1); }
+  to { transform: scaleX(-1); } }
 
 .skew-half { width: 40%; float: left; }
 

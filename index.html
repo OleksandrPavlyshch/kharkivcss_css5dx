@@ -16,8 +16,8 @@
       <p><a href="https://github.com/OleksandrPavlyshch">Oleksandr Pavlyshch</a>.
       </p>
     </header>
-    <section class="slide">
-      <h2>CSS 5DX</h2>
+    <section class="slide black intro-header">
+      <h2 class="hide">CSS 5DX</h2><img alt="css_5dx" src="img/css_5dx.jpg" class="cover"/>
     </section>
     <section class="slide"><img alt="awwwards.jpg" src="img/awwwards.jpg" class="logo-img"/><img alt="css-design-awards.png" src="img/css-design-awards.png" class="logo-img"/><img alt="fwa.png" src="img/fwa.png" class="logo-img"/>
     </section>
@@ -124,7 +124,7 @@
     </section>
     <section class="slide">
       <h2>perspective-origin:</h2>
-      <p>Устанавливает точку с которой зритель смотрит на сцену по осям x и y.</p>
+      <p>Устанавливает точку с которой зритель смотрит на сцену по осям X и Y.</p>
       <pre><code>.wrapper {
 	perspective-origin: [ key-word | % | length ]
 }</code></pre>
@@ -136,7 +136,7 @@
       <h2 class="shout">Точка трансформации</h2>
     </section>
     <section class="slide">
-      <h2>transform-origin: x, y [,z]?</h2>
+      <h2>transform-origin: X, Y [,Z]?</h2>
       <p>Устанавливает координаты точки, относительно которой будет происходить трансформация элемента.</p>
       <pre><code>.element{
 	transform-origin: 50% 50% 0;
@@ -145,7 +145,7 @@
     <section class="slide">
       <div class="demo-line">
         <pre><code>.element{
-	transform-origin: 50% 4px
+	transform-origin: 50% 4px;
 }</code></pre>
         <div class="demo-example">
           <div class="transform-origin_demo"><img alt="bell" src="img/bell.png" class="transform-origin_demo-bell"/>
@@ -154,7 +154,7 @@
       </div>
       <div class="demo-line">
         <pre><code>.element{
-	transform-origin: left center
+	transform-origin: left center;
 }</code></pre>
         <div class="demo-example">
           <div class="transform-origin_demo"><img alt="bell" src="img/bell.png" class="transform-origin_demo-bell transform-origin_demo-bell-custom-origin"/>
@@ -389,6 +389,20 @@
     <section class="slide centr-example">
       <div class="demo-3d preserve-3d">
         <div class="demo-3d_inner scale-demo_scale-3d-block">scale3d(1, 1, 2) rotateX(50deg)</div>
+      </div>
+    </section>
+    <section class="slide">
+      <h2>Маленький лайвхак</h2>
+      <p>Если задать scale c минусовым значением блок отобразится зеркально.</p>
+      <pre><code>.element {
+	transform: scale( -1 );
+}</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block scale-demo_scale-invert"><img alt="BatmanPikachu" src="img/BatmanPikachu.svg" class="undefined"/>
+        </div>
       </div>
     </section>
     <section class="slide">
