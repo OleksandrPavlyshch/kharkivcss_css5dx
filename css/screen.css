@@ -29,6 +29,8 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.25; min-w
 
 .slide { padding: 50px 40px 0 50px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
+.slide:before { content: ''; position: absolute; z-index: 20; right: 0; top: 0; height: 100%; width: 15%; }
+
 .slide h2 { font-size: 65px; font-weight: 900; margin-bottom: 40px; }
 
 .slide pre { margin-top: 25px; display: inline-block; vertical-align: middle; margin-bottom: .5em; text-align: left; }
@@ -116,6 +118,16 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 .hide { display: none !important; }
 
 .backface { width: 200px; height: 200px; display: inline-block; position: relative; background-color: #844BCA; background: url(../img/picachu.svg) 50% 50% no-repeat; background-size: contain; transform-style: preserve-3d; }
+
+.backface_header { background: url("../img/aceventura_whennaturecallls.jpg") 50% 50% no-repeat; background-size: cover; }
+
+.backface_header .shout { padding: 0 50px; text-align: center; }
+
+.backface_header .shout:after { display: none; }
+
+.backface_header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
+
+.backface_header .shout { text-align: left; }
 
 .active .backface { animation: spin 4s infinite linear; }
 
@@ -244,6 +256,16 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 @keyframes scale-invert { from { transform: scaleX(1); }
   to { transform: scaleX(-1); } }
+
+.skew-header { background: url("../img/skew.jpg") 50% 50% no-repeat; background-size: cover; background-position: 0 50%; }
+
+.skew-header .shout { padding: 0 50px; text-align: center; }
+
+.skew-header .shout:after { display: none; }
+
+.skew-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
+
+.skew-header .shout { text-align: left; }
 
 .skew-half { width: 40%; float: left; }
 
