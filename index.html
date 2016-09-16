@@ -124,7 +124,7 @@
     </section>
     <section class="slide">
       <h2>perspective-origin:</h2>
-      <p>Устанавливает точку с которой зритель смотрит на сцену по осям x и y.</p>
+      <p>Устанавливает точку с которой зритель смотрит на сцену по осям X и Y.</p>
       <pre><code>.wrapper {
 	perspective-origin: [ key-word | % | length ]
 }</code></pre>
@@ -136,7 +136,7 @@
       <h2 class="shout">Точка трансформации</h2>
     </section>
     <section class="slide">
-      <h2>transform-origin: x, y [,z]?</h2>
+      <h2>transform-origin: X, Y [,Z]?</h2>
       <p>Устанавливает координаты точки, относительно которой будет происходить трансформация элемента.</p>
       <pre><code>.element{
 	transform-origin: 50% 50% 0;
@@ -145,7 +145,7 @@
     <section class="slide">
       <div class="demo-line">
         <pre><code>.element{
-	transform-origin: 50% 4px
+	transform-origin: 50% 4px;
 }</code></pre>
         <div class="demo-example">
           <div class="transform-origin_demo"><img alt="bell" src="img/bell.png" class="transform-origin_demo-bell"/>
@@ -154,7 +154,7 @@
       </div>
       <div class="demo-line">
         <pre><code>.element{
-	transform-origin: left center
+	transform-origin: left center;
 }</code></pre>
         <div class="demo-example">
           <div class="transform-origin_demo"><img alt="bell" src="img/bell.png" class="transform-origin_demo-bell transform-origin_demo-bell-custom-origin"/>
@@ -205,7 +205,7 @@
     </section>
     <section class="slide">
       <h2>backface-visibility: </h2>
-      <p>Определяет будет ли видно контент элемента, который с помощью 3d трансформаций отвернут лицом от пользователя.</p>
+      <p>Определяет будет ли видно контент элемента, который с помощью 3D трансформаций отвернут лицом от пользователя.</p>
       <pre><code>.element {
 	backface-visibility: [ visible | hidden ];
 }</code></pre>
@@ -392,11 +392,25 @@
       </div>
     </section>
     <section class="slide">
+      <h2>Маленький лайвхак</h2>
+      <p>Если задать scale c минусовым значением блок отобразится зеркально.</p>
+      <pre><code>.element {
+	transform: scale( -1 );
+}</code></pre>
+    </section>
+    <section class="slide centr-example">
+      <div class="demo-mesh">
+        <div class="demo-mesh_base-block"></div>
+        <div class="demo-mesh_transform-block scale-demo_scale-invert"><img alt="BatmanPikachu" src="img/BatmanPikachu.svg" class="undefined"/>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
       <h2 class="shout">Матрицы</h2>
     </section>
     <section class="slide">
       <h2>transform: matrix(a, b, c, d, e, f)</h2>
-      <p>Описывает в виде матрицы 2D преобразования елемента.</p>
+      <p>Описывает в виде матрицы 2D преобразования элемента.</p>
       <pre><code>.element {
 	transform: matrix( a, b, 0,
 					   c, d, 0,
@@ -405,7 +419,7 @@
     </section>
     <section class="slide">
       <h2>transform: matrix3d()</h2>
-      <p>Описывает в виде матрицы 3D преобразования елемента.</p>
+      <p>Описывает в виде матрицы 3D преобразования элемента.</p>
       <pre><code>.element {
 	transform: matrix3d( sx, 0, 0, 0,
  						 0, sy, 0, 0,
@@ -426,7 +440,7 @@
       <h2>will-change: auto | prop [, prop]?</h2>
       <p>Свойсто
         <mark>will-change</mark>позволяет заранее проинформировать браузер об изменениях, которые возможно будут применены к элементу.
-        И применить к нему апаратное ускорение
+        И применить к нему апаратное ускорение.
       </p>
     </section>
     <section class="slide white link-slide">
