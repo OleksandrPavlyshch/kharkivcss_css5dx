@@ -251,7 +251,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .scale-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
-.scale-header-bg { position: absolute; z-index: 1; width: 100%; height: 100%; left: 0; top: 0; background-image: url("../img/scaler.jpg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; -webkit-filter: blur(5px); filter: blur(5px); }
+.scale-header-bg { position: absolute; z-index: 1; width: 100%; height: 100%; left: 0; top: 0; background-image: url("../img/scaler.jpg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
 .scale-header .shout { position: relative; z-index: 10; }
 
