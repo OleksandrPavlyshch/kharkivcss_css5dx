@@ -469,11 +469,11 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .transform-style-demo.preserve-3d .parent { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
 
-.transform-style-demo .parent { margin: 10px; width: 180px; height: 180px; background-color: #844BCA; opacity: 0.8; }
+.transform-style-demo .parent { margin: 10px; width: 180px; height: 180px; background-color: #844BCA; }
 
 .active .transform-style-demo .parent { -webkit-animation: spin 10s infinite linear; animation: spin 10s infinite linear; }
 
-.transform-style-demo .parent .child-1, .transform-style-demo .parent .child-2 { position: absolute; top: 20px; left: 20px; width: 150px; height: 150px; padding: 10px; -webkit-box-sizing: border-box; font-family: monospace; font-size: 10pt; }
+.transform-style-demo .parent .child-1, .transform-style-demo .parent .child-2 { position: absolute; opacity: 0.8; top: 20px; left: 20px; width: 150px; height: 150px; padding: 10px; -webkit-box-sizing: border-box; font-family: monospace; font-size: 10pt; }
 
 .transform-style-demo .parent .child-1 { background-color: #49DC93; -webkit-transform: rotateY(45deg) translateZ(-70px); transform: rotateY(45deg) translateZ(-70px); }
 
