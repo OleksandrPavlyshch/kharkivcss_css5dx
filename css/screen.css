@@ -147,6 +147,16 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .logo-img + .logo-img { margin-top: 3%; }
 
+.matrix-header { background: url("../img/MatrixBluePillRedPill.jpg") 50% 50% no-repeat; background-size: cover; }
+
+.matrix-header .shout { padding: 0 50px; text-align: center; }
+
+.matrix-header .shout:after { display: none; }
+
+.matrix-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
+
+.matrix-header .shout { top: 25%; }
+
 .perspective_origin-header { background: url("../img/ac1_viewpoint.jpg") 50% 50% no-repeat; background-size: cover; }
 
 .perspective_origin-header .shout { padding: 0 50px; text-align: center; }
@@ -218,6 +228,14 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 .rotate-demo_rotate-3d { -webkit-transform: rotate3d(1, 2, 3, 30deg); transform: rotate3d(1, 2, 3, 30deg); }
 
 .active .rotate-demo_rotate-3d { -webkit-animation: rotate-3d 4s linear infinite; animation: rotate-3d 4s linear infinite; }
+
+.rotate-header { background: url("../img/doctor-strange-new-york-city.jpg") 50% 50% no-repeat; background-size: cover; }
+
+.rotate-header .shout { padding: 0 50px; text-align: center; }
+
+.rotate-header .shout:after { display: none; }
+
+.rotate-header h2 { font-size: 128px !important; text-shadow: 3px 4px 10px #000; }
 
 @-webkit-keyframes rotate-z { from { -webkit-transform: rotateZ(0); transform: rotateZ(0); }
   to { -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); } }
@@ -469,7 +487,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .transform-style-demo.preserve-3d .parent { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
 
-.transform-style-demo .parent { margin: 10px; width: 180px; height: 180px; background-color: #844BCA; }
+.transform-style-demo .parent { margin: 10px; width: 180px; height: 180px; background-color: rgba(132, 75, 202, 0.6); }
 
 .active .transform-style-demo .parent { -webkit-animation: spin 10s infinite linear; animation: spin 10s infinite linear; }
 
