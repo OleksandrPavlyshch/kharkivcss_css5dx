@@ -281,7 +281,7 @@ a, a:before, .button, button, button:before, input[type="button"], input[type="s
 
 .active .scale-demo_scale-y { -webkit-animation: scale-y 2s linear infinite alternate; animation: scale-y 2s linear infinite alternate; }
 
-.scale-demo_scale-3d-block, .scale-demo_scale-z-block { -webkit-transform: scale3d(1, 1, 2) rotateX(50deg); transform: scale3d(1, 1, 2) rotateX(50deg); }
+.scale-demo_scale-3d-block, .scale-demo_scale-z-block { -webkit-transform: scale3d(1, 1, 2) rotateX(50deg); transform: scale3d(1, 1, 2) rotateX(50deg); background-image: linear-gradient(#999999 1px, transparent 1px), linear-gradient(90deg, #999999 1px, transparent 1px); background-size: 44px 40px !important; background-position: center center; }
 
 .active .scale-demo_scale-z-block { -webkit-animation: scale-z 2s linear infinite alternate; animation: scale-z 2s linear infinite alternate; }
 
